@@ -248,11 +248,11 @@
 			"description": "@var boolean Show skin-specific user preferences on the Special:Preferences appearance tab when true and hide them otherwise."
 		},
 		"VectorDefaultSkinVersion": {
-			"value": "1",
+			"value": "2",
 			"description": "@var string:['2'|'1'] The version ('2' for latest, '1' for legacy) of the Vector skin to use for anonymous users and as a fallback. The value is _not_ persisted."
 		},
 		"VectorDefaultSkinVersionForExistingAccounts": {
-			"value": "1",
+			"value": "2",
 			"description": "@var string:['2'|'1'] The version ('2' for latest, '1' for legacy) of the Vector skin to use when an existing user has not specified a preference. This configuration is not used for new accounts (see VectorDefaultSkinVersionForNewAccounts) and is impermanent. In the future, this field may contains versions such as \"beta\" which when specified and the BetaFeatures extension is installed, and the user is enrolled, the latest version is used otherwise legacy. The value is _not_ persisted."
 		},
 		"VectorDefaultSkinVersionForNewAccounts": {
@@ -276,12 +276,12 @@
 			"value": true
 		},
 		"VectorDefaultSidebarVisibleForAnonymousUser": {
-			"value": false
+			"value": true
 		},
 		"VectorLanguageInHeader": {
 			"value": {
-				"logged_in": false,
-				"logged_out": false
+				"logged_in": true,
+				"logged_out": true
 			},
 			"description": "@var array Moves the language links from the sidebar into a menu beside the page title. Also moves the indicators to the line below, next to the tagline (siteSub)."
 		},
