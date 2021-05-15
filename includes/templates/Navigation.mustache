@@ -1,18 +1,56 @@
-<div id="mw-navigation">
-	<h2>{{msg-navigation-heading}}</h2>
+<div id="mw-navigation2" style="display:flex;">
 	{{#data-portlets-sidebar}}{{>Sidebar}}{{/data-portlets-sidebar}}
-	<div id="mw-head">
-		<div class="mw-article-toolbar-container">
-			{{#data-portlets}}
-			<div id="left-navigation">
-				{{#data-namespaces}}{{>Menu}}{{/data-namespaces}}
-				{{#data-variants}}{{>Menu}}{{/data-variants}}
-			</div>
-			<div id="right-navigation">
-				{{#data-views}}{{>Menu}}{{/data-views}}
-				{{#data-actions}}{{>Menu}}{{/data-actions}}
-			</div>
-			{{/data-portlets}}
-		</div>
+	<div id="mw-head2" style="flex-basis:60em;min-width:0;overflow:hidden;">
+                <div class="mw-article-toolbar-container">
+                        {{#data-portlets}}
+                        <div id="left-navigation">
+                                {{#data-namespaces}}{{>Menu}}{{/data-namespaces}}
+                                {{#data-variants}}{{>Menu}}{{/data-variants}}
+                        </div>
+                        <div id="right-navigation">
+                                {{#data-views}}{{>Menu}}{{/data-views}}
+                                {{#data-actions}}{{>Menu}}{{/data-actions}}
+                        </div>
+                        {{/data-portlets}}
+                </div>
+{{! `role` is unnecessary but kept to support selectors in any gadgets or user styles. }}
+<main id="content" class="mw-body" role="main" style="">
+        <a id="top"></a>
+        <div id="siteNotice" class="mw-body-content">{{{html-site-notice}}}</div>
+
+        {{^is-language-in-header}}
+        {{>Indicators}}
+        <h1 id="firstHeading" class="firstHeading" {{{html-user-language-attributes}}}>{{{html-title}}}</h1>
+        {{/is-language-in-header}}
+
+        {{#is-language-in-header}}
+        <header class="mw-body-header">
+                        {{#data-portlets.data-languages}}{{>Menu}}{{/data-portlets.data-languages}}
+                <h1 id="firstHeading" class="firstHeading" {{{html-user-language-attributes}}}>
+                        {{{html-title}}}
+                </h1>
+                {{>Indicators}}
+                {{#is-article}}
+                        <div id="siteSub" class="noprint">{{msg-tagline}}</div>
+                {{/is-article}}
+        </header>
+        {{/is-language-in-header}}
+        <div id="bodyContent" class="mw-body-content">
+                {{^is-language-in-header}}
+                        {{#is-article}}<div id="siteSub" class="noprint">{{msg-tagline}}</div>{{/is-article}}
+                {{/is-language-in-header}}
+                <div id="contentSub"{{{html-user-language-attributes}}}>{{{html-subtitle}}}</div>
+                <div id="contentSub2">{{{html-undelete-link}}}</div>
+                {{{html-user-message}}}
+                {{{html-body-content}}}
+                {{{html-categories}}}
+        </div>
+</main>
+{{{html-after-content}}}
+
+
 	</div>
+	<div id="mw-panel2" style="flex-grow:1;">
+	</div>
+
 </div>
