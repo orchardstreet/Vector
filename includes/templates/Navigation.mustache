@@ -1,4 +1,4 @@
-<div id="mw-navigation2" style="height:100%;margin:0;box-sizing:border-box;white-space:nowrap;">{{#data-portlets-sidebar}}<div id="mw-panel2" class="mw-sidebar" style="white-space:normal;min-width:11.063em;height:543px;display:inline-block;vertical-align:top;width:calc(50% - 30.2em);"><div id="thesidebar" style="margin-right:20px;width:152px;">{{#data-portlets-first}}{{>Menu}}{{/data-portlets-first}}
+<div id="mw-navigation2" style="height:auto;margin:0;box-sizing:border-box;white-space:nowrap;">{{#data-portlets-sidebar}}<div id="mw-panel2" class="mw-sidebar" style="white-space:normal;min-width:11.063em;height:auto;display:inline-block;vertical-align:top;width:calc(50% - 30.2em);"><div id="thesidebar" style="margin-right:20px;width:152px;">{{#data-portlets-first}}{{>Menu}}{{/data-portlets-first}}
         {{#data-emphasized-sidebar-action}}
         <div class="mw-sidebar-action">
                 <a class="mw-sidebar-action-link" title="{{msg-vector-opt-out-tooltip}}"
@@ -7,7 +7,7 @@
         {{/data-emphasized-sidebar-action}}
         {{#array-portlets-rest}}{{>Menu}}{{/array-portlets-rest}}
         {{^is-language-in-header}}
-        {{#data-portlets.data-languages}}{{>Menu}}{{/data-portlets.data-languages}}{{/is-language-in-header}}</div></div>{{/data-portlets-sidebar}}<div id="mw-head2" style="max-width:60em;width:calc(100% - 11.063em);display:inline-block;height:100%;vertical-align:top;white-space:normal;">
+        {{#data-portlets.data-languages}}{{>Menu}}{{/data-portlets.data-languages}}{{/is-language-in-header}}</div></div>{{/data-portlets-sidebar}}<div id="mw-head2" style="max-width:60em;width:calc(100% - 11.063em);display:inline-block;vertical-align:top;white-space:normal;">
                 <div class="mw-article-toolbar-container">
                         {{#data-portlets}}
                         <div id="left-navigation">
@@ -51,6 +51,4 @@
                 {{{html-user-message}}}
                 {{{html-body-content}}}
                 {{{html-categories}}}
-        </div></main>{{{html-after-content}}}</div><div id="mw-panel2" style="height:100px;vertical-align:top;display:inline-block;max-width:238px;width:calc(50% - 35.7315em);overflow:hidden;"></div>
-
-</div>
+        </div></main>{{{html-after-content}}}</div><div id="mw-panel2" style="white-space:normal;vertical-align:top;overflow:hidden;display:inline-block;width:calc(50% - 30.7315em);"><div style="box-sizing:border-box;margin-left:1.875em;height:400px;width:auto;text-align:center;">{{>RightSidebar}}</div></div></div>
