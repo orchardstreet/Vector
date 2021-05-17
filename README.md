@@ -3,6 +3,8 @@ Vector Skin
 
 A forked version of the new Vector theme, but with a functioning right Sidebar, and a simplified inline-block setup, rather than the z-index stuff.
 
+Also, the languages button is on the top of the main page, instead of the bottom, by default. Also the skin.json defaults to the new theme.
+
 Installation
 ------------
 
