@@ -1,6 +1,8 @@
 Vector Skin
 ========================
 
+A forked version of the new Vector theme, but with a functioning right Sidebar, and a simplified inline-block setup, rather than the z-index stuff.
+
 Installation
 ------------
 
